@@ -15,7 +15,7 @@ class Shop:
             is_file_exest = open(self.__file_name, 'r')
         except:
             is_file_exest = open(self.__file_name, 'w')
-            is_file_exest.close()
+        is_file_exest.close()
 
     def add(self, *product):
         res_str = self.get_products()
